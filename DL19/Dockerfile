@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.3.0-cudnn8-runtime-ubuntu20.04
+FROM nvidia/cuda:12.3.0-runtime-ubuntu20.04
 
 RUN apt update && apt install tzdata -y
 ENV TZ='America/Sao_Paulo'
