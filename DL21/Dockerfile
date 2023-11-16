@@ -1,7 +1,7 @@
-FROM nvidia/cuda:12.2.0-runtime-ubuntu20.04
+FROM nvidia/cuda:11.4.3-cudnn8-runtime-ubuntu20.04
 
-# RUN apt update && apt install tzdata -y
-# ENV TZ='America/Sao_Paulo'
+RUN apt update && apt install tzdata -y
+ENV TZ='America/Sao_Paulo'
 
 RUN apt update && apt install -y python3.9 python3-pip
 COPY requirements.txt /requirements.txt
