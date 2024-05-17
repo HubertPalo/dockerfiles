@@ -2,3 +2,9 @@ pyyaml
 ray[default]
 dacite
 coloredlogs
+pandas
+scipy
+lightning
+scikit-learn
+matplotlib
+torchvision
